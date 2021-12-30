@@ -1,0 +1,16 @@
+{
+    "name": "DictNow",
+    "version": "1.0",
+    "manifest_version": 2,
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["app.js"]
+        }
+    ],
+    "browser_action": {
+        "default_popup": "popup.html",
+        "dafault_title": "DictNow"
+    },
+    "permissions": ["activeTab"]
+}
